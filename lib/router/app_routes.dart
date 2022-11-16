@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:screens/models/destination.dart';
+import 'package:screens/screens/avatar_screen.dart';
 import 'package:screens/screens/screens.dart';
 
 class AppRouters {
@@ -21,10 +22,10 @@ class AppRouters {
         name: "AlertScreen",
         screen: const AlertScreen()),
     Destination(
-        route: "list3",
+        route: "avatar",
         icon: Icons.home,
-        name: "home",
-        screen: const ListAllScreen())
+        name: "AvatarScreen",
+        screen: const AvatarScreen())
   ];
 
   static Map<String, Widget Function(BuildContext)> get routers {
