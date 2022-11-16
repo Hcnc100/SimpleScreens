@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:screens/models/destination.dart';
+import 'package:screens/screens/animation_screen.dart';
 import 'package:screens/screens/avatar_screen.dart';
 import 'package:screens/screens/screens.dart';
 
@@ -25,7 +26,12 @@ class AppRouters {
         route: "avatar",
         icon: Icons.home,
         name: "AvatarScreen",
-        screen: const AvatarScreen())
+        screen: const AvatarScreen()),
+    Destination(
+        route: "animation",
+        icon: Icons.home,
+        name: "AnimationScreen",
+        screen: const AnimationScreen())
   ];
 
   static Map<String, Widget Function(BuildContext)> get routers {
