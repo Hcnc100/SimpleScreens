@@ -8,36 +8,36 @@ class AppRouters {
   static const initialRoute = "home";
   static final listDestinations = <Destination>[
     Destination(
-        route: "home",
-        icon: Icons.home,
-        name: "home",
-        screen: const ListAllScreen()),
-    Destination(
         route: "card",
-        icon: Icons.home,
+        icon: Icons.card_giftcard,
         name: "CardScreen",
         screen: const CardScreen()),
     Destination(
         route: "alert",
-        icon: Icons.home,
+        icon: Icons.notification_add,
         name: "AlertScreen",
         screen: const AlertScreen()),
     Destination(
         route: "avatar",
-        icon: Icons.home,
+        icon: Icons.person,
         name: "AvatarScreen",
         screen: const AvatarScreen()),
     Destination(
         route: "animation",
-        icon: Icons.home,
+        icon: Icons.animation,
         name: "AnimationScreen",
         screen: const AnimationScreen())
   ];
 
   static Map<String, Widget Function(BuildContext)> get routers {
-    return {
+    final mapRoutes = {
       for (var element in listDestinations)
         element.route: (BuildContext context) => element.screen
     };
+
+    // ! add home screen
+    mapRoutes.addAll({"home": (BuildContext context) => const HomeScreen()});
+
+    return mapRoutes;
   }
 }

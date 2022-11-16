@@ -3,8 +3,8 @@ import 'package:screens/models/destination.dart';
 import 'package:screens/router/app_routes.dart';
 import 'package:screens/theme/app_theme.dart';
 
-class ListAllScreen extends StatelessWidget {
-  const ListAllScreen({Key? key}) : super(key: key);
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
