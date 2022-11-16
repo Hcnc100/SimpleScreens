@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:screens/models/destination.dart';
 import 'package:screens/router/app_routes.dart';
+import 'package:screens/theme/app_theme.dart';
 
 class ListAllScreen extends StatelessWidget {
   const ListAllScreen({Key? key}) : super(key: key);
@@ -10,8 +11,6 @@ class ListAllScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("LIsta de pantallas"),
-        elevation: 0,
-        backgroundColor: Colors.blue,
       ),
       body: ListScreens(listDestinations: AppRouters.listDestinations),
     );
@@ -48,7 +47,7 @@ class ItemNav extends StatelessWidget {
     return ListTile(
       title: Text(destination.name),
       onTap: () => Navigator.pushNamed(context, destination.route),
-      leading: Icon(destination.icon),
+      leading: Icon(destination.icon, color: AppTheme.primaryColor),
       trailing: const Icon(Icons.arrow_forward_rounded),
     );
   }
