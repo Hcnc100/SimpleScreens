@@ -16,10 +16,10 @@ class AppRouters {
         name: "CardScreen",
         screen: const CardScreen()),
     Destination(
-        route: "list2",
+        route: "alert",
         icon: Icons.home,
-        name: "home",
-        screen: const ListAllScreen()),
+        name: "AlertScreen",
+        screen: const AlertScreen()),
     Destination(
         route: "list3",
         icon: Icons.home,
