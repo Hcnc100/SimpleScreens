@@ -30,6 +30,11 @@ class AppRouters {
         icon: Icons.input,
         name: "InputsScreen",
         screen: const InputsScreen()),
+    Destination(
+        route: "slider",
+        icon: Icons.sailing,
+        name: "SliderScreen",
+        screen: const SliderScreen())
   ];
 
   static Map<String, Widget Function(BuildContext)> get routers {
