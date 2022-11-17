@@ -34,7 +34,12 @@ class AppRouters {
         route: "slider",
         icon: Icons.sailing,
         name: "SliderScreen",
-        screen: const SliderScreen())
+        screen: const SliderScreen()),
+    Destination(
+        route: "listBuilder",
+        icon: Icons.image,
+        name: "InfinityScrollScreen",
+        screen: const InfinityScrollScreen())
   ];
 
   static Map<String, Widget Function(BuildContext)> get routers {
