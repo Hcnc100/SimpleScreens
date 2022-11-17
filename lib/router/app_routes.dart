@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:screens/models/destination.dart';
-import 'package:screens/screens/animation_screen.dart';
-import 'package:screens/screens/avatar_screen.dart';
-import 'package:screens/screens/inputs_screen.dart';
 import 'package:screens/screens/screens.dart';
 
 class AppRouters {

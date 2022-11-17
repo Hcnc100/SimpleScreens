@@ -1,5 +1,6 @@
-import 'package:screens/screens/alert_screen.dart';
-
-export 'package:screens/screens/alert_screen.dart';
-export 'package:screens/screens/card_screen.dart';
-export 'package:screens/screens/list_all_screen.dart';
+export 'alert_screen.dart';
+export 'animation_screen.dart';
+export 'avatar_screen.dart';
+export 'card_screen.dart';
+export 'home_screen.dart';
+export 'inputs_screen.dart';
